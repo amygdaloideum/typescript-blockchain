@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outFile": "./app.js",
+    "removeComments": true,
+
+    "strict": true,
+
+    "moduleResolution": "node",
+
+    "experimentalDecorators": true
+  }
+}

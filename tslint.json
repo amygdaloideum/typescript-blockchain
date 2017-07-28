@@ -1,0 +1,98 @@
+{
+  "rules": {
+    "no-unused-expression": true,
+    "no-duplicate-variable": true,
+    "no-unused-variable": true,
+    "no-unnecessary-callback-wrapper": true,
+    "arrow-return-shorthand": true,
+    "only-arrow-functions": [
+      false
+    ],
+    "curly": true,
+    "class-name": true,
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "triple-equals": true,
+    "typedef": [
+      true,
+      "call-signature",
+      "parameter",
+      "member-variable-declaration",
+      "property-declaration"
+    ],
+    "member-access": [
+      true,
+      "check-accessor"
+    ],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "protected-static-field",
+          "private-static-field",
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "public-constructor",
+          "protected-constructor",
+          "private-constructor",
+          "public-static-method",
+          "protected-static-method",
+          "private-static-method",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "no-use-before-declare": true,
+    "no-var-keyword": true,
+    "typeof-compare": true,
+    "no-require-imports": true,
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "prefer-const": true,
+    "no-default-export": true,
+    "array-type": [
+      "array"
+    ],
+    "arrow-parens": [
+      true,
+      "ban-single-arg-parens"
+    ],
+    "interface-name": [
+      true,
+      "always-prefix"
+    ],
+    "newline-before-return": false,
+    "new-parens": true,
+    "no-angle-bracket-type-assertion": true,
+    "no-consecutive-blank-lines": true,
+    "no-irregular-whitespace": true,
+    "no-parameter-properties": true,
+    "no-trailing-whitespace": true,
+    "ordered-imports": [
+      true
+    ],
+    "prefer-method-signature": true,
+    "prefer-template": [
+      true
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "return-undefined": true,
+    "space-before-function-paren": [
+      true,
+      "never"
+    ],
+    "type-literal-delimiter": true
+  }
+}
