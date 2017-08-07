@@ -82,7 +82,7 @@
     ],
     "prefer-method-signature": true,
     "prefer-template": [
-      true
+      false
     ],
     "quotemark": [
       true,

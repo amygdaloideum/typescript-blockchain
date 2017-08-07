@@ -1,36 +1,35 @@
-import { SHA256 } from 'crypto-js';
-import { mine } from './miner';
-import { IBlock } from './types/IBlock';
+import { IBlock, IMinedBlock } from './types/IBlock';
 
 export class Block implements IBlock {
   public id: number;
-  public hash: string;
   public previousHash: string;
-  public nonce: number;
   public data: any;
 
-  constructor(previousBlock: Block, data: any) {
-    this.id = previousBlock.id + 1;
-    this.hash = '';
+  constructor(previousBlock: IMinedBlock, data: any) {
+    this.id = previousBlock.block.id + 1;
     this.previousHash = previousBlock.hash;
     this.data = data;
   }
 }
 
-export class GenesisBlock implements IBlock {
-  public id: number;
-  public hash: string;
-  public previousHash: string;
+export class MinedBlock implements IMinedBlock {
   public nonce: number;
-  public data: any;
+  public hash: string;
+  public block: IBlock;
 
-  constructor() {
-    this.id = 0;
-    this.previousHash = '0000000000000000000000000000000000000000000000000000000000000000';
-    this.data = null;
-    const { hash, nonce } = mine(this);
-    this.hash = hash;
+  constructor(block: IBlock, nonce: number, hash: string) {
+    this.block = block;
     this.nonce = nonce;
+    this.hash = hash;
   }
-
 }
+
+export const getGenesisBlock = (): IMinedBlock => ({
+  hash: '123456789',
+  nonce: 0,
+  block: {
+    id: 0,
+    previousHash: '',
+    data: {},
+  }
+});
