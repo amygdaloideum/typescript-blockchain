@@ -5,8 +5,6 @@ import { IBlock, IMinedBlock } from './src/types/IBlock';
 
 const blockchain = new Blockchain();
 
-const mineQueue: IBlock[] = [];
-
-const block = new Block(blockchain.getLast(), {});
+const block = new Block(blockchain.getLast(), {}, '63352');
 
 const nonce = mineBlock(block);

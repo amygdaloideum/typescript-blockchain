@@ -51,6 +51,8 @@ export const getGenesisBlock = (): IMinedBlock => ({
     coinBase: {
       id: hash(`04f7a1e58f404d8644c6410d3a97d5a14fa1d0cd8e945444f3eed11bcd988c704475d372cfecb691ebd654d2d0a60b7f7e4ee213e679f368713cb9df7a6bfeb5a250`),
       output: '04f7a1e58f404d8644c6410d3a97d5a14fa1d0cd8e945444f3eed11bcd988c704475d372cfecb691ebd654d2d0a60b7f7e4ee213e679f368713cb9df7a6bfeb5a2',
+      message: 'find_the_halflings',
+      signature: '3046022100a962dd57a7407e13bc26d7a7b6146db964f02dfcd7a9ba5661743ca04bb0aa55022100eff0178a7f47ca3847f89fb7dd76e20f45a30d51b3fe0ad698f1215b9bb0ae4c',
       amount: 50,
     },
     transactions: [],

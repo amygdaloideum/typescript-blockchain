@@ -15,6 +15,8 @@ export interface IBlock {
 export interface ICoinBase {
   readonly id: string;
   readonly output: string;
+  readonly message: string;
+  readonly signature: string;
   readonly amount: number;
 }
 

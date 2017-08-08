@@ -6,6 +6,8 @@
   "scripts": {
     "start": "npm run build:live",
     "once": "ts-node ./index.ts",
+    "server": "ts-node ./src/server/index.ts",
+    "client": "ts-node ./src/client/index.ts",
     "build:live": "nodemon --exec ts-node -- ./index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "tslint -p tsconfig.json --type-check index.ts"
@@ -13,11 +15,17 @@
   "author": "Daniel Bornstrand",
   "license": "ISC",
   "dependencies": {
+    "@types/commander": "^2.9.1",
     "@types/crypto-js": "^3.1.33",
+    "@types/socket.io": "^1.4.29",
+    "@types/socket.io-client": "^1.4.29",
+    "commander": "^2.11.0",
     "crypto-js": "^3.1.9-1",
     "elliptic": "^6.4.0",
     "merkle": "^0.5.1",
     "secp256k1": "^3.3.0",
+    "socket.io": "^2.0.3",
+    "socket.io-client": "^2.0.3",
     "ts-node": "^3.3.0",
     "tslint": "^5.5.0",
     "typescript": "^2.4.2"
